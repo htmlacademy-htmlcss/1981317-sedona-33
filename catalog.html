@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>HTML Academy: Седона</title>
 </head>
 <body>
+  <div class="catalog-container">
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -52,11 +54,12 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <span class="visually-hidden">Главная</span></a>
+              <span class="visually-hidden">Главная</span>
+            </a>
           </li>
           <li class="breadcrumbs-item"></li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Гостиницы</a>
+            <a class="breadcrumbs-link breadcrumbs-link-hotels " href="#">Гостиницы</a>
           </li>
         </ul>
         <h2 class="visually-hidden">Поиск гостиниц Седоны</h2>
@@ -211,7 +214,7 @@
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 2000 &#8381;</span>
               <a href="#" class="button hotel-detail-button">ПОДРОБНЕЕ</a>
-              <a href="#" class="button add-to-favorites-button in-favorites">В ИЗБРАННОМ</a>
+              <a href="#" class="button add-to-favorites-button add-to-favorites-button-in-favorites">В избранном</a>
             </div>
           </div>
           <div class="hotel-card-rating-container">
@@ -225,7 +228,7 @@
               alt="GreenTree Inn Гостиница.">
           </a>
           <div class="hotel-card-content-container">
-            <a class="hotel-card-title" href="#">GreenTree Inn</a>
+            <a class="hotel-card-title" href="#">Green Tree Inn</a>
             <div class="hotel-type-price-container">
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 3000 &#8381;</span>
@@ -277,10 +280,10 @@
   </main>
   <section class="catalog-mailing">
     <h2 class="catalog-mailing-title">Подпишитесь на рассылку</h2>
-    <p>Только полезная информация и никакого спама,честное бойскаутское!</p>
+    <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="mailing-form">
       <input class="field" placeholder="Ваш e-mail" type="email" name="mailing-email">
-      <input class="button mailing-button" type="submit" value="Подписаться">
+      <input class="button catalog-mailing-button" type="submit" value="Подписаться">
     </form>
   </section>
   <footer>
@@ -315,5 +318,6 @@
       </a>
     </section>
   </footer>
+</div>
 </body>
 </html>
